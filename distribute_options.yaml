@@ -1,0 +1,27 @@
+
+output: dist/
+releases:
+  - name: test
+    jobs:
+      # 构建 apk 包并将其发布到 pgyer
+      - name: 创辉
+        package:
+          platform: android
+          target: apk
+          build_args:
+            target: lib/main.dart
+            no-tree-shake-icons: ''
+            target-platform: android-arm,android-arm64
+            dart-define:
+              ENVIRONMENT: TEST
+#        publish_to: pgyer
+#             构建 ipa 包并将其发布到 pgyer
+#      - name: 启智宝学校
+#        package:
+#          platform: ios
+#          target: ipa
+#          build_args:
+#            target: lib/main.dart
+#            export-options-plist: ios/ExportOptions.plist
+#            no-tree-shake-icons: ''
+#        publish_to: pgyer

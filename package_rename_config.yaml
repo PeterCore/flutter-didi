@@ -1,0 +1,17 @@
+package_rename_config:
+  android:
+    app_name: 紫色
+    package_name:  com.chihuahua.app
+    override_old_package: # (Optional) (String) Use this to delete the old folder structure of MainActivity or to use the existing code with the new package name
+    lang: # (Optional) (String) The android development language {kotlin(default) or java}
+
+  ios:
+    app_name: 紫色
+    bundle_name: com.chihuahua.app
+    package_name: # (String) The product bundle identifier of the ios app
+
+#  web:
+#    app_name: # (String) The title of the web app and PWA
+#    short_app_name: # (String) The short display name of the PWA (Optional, defaults to app_name if not set)
+#    description: # (String) The description of the web app and PWA
+
